@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    tools:context=".Exchange">
+
+    <TextView
+        android:id="@+id/txtBath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edittxt2"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_toEndOf="@+id/edittxt2"
+        android:layout_toRightOf="@+id/edittxt2"
+        android:text="Baht"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/edittxt2"
+        app:layout_constraintStart_toEndOf="@+id/edittxt2" />
+
+    <TextView
+        android:id="@+id/appname3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Exchange"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bgmenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/money"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginStart="82dp"
+        android:background="@mipmap/moneyb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/exchange"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+        android:background="@mipmap/exchangeb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edittxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from" />
+
+    <EditText
+        android:id="@+id/edittxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/edittxt1"
+        app:layout_constraintTop_toBottomOf="@+id/edittxt1" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="140dp"
+        android:textSize="20sp"
+        android:text="FROM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="TO"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/from"
+        app:layout_constraintTop_toBottomOf="@+id/from" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="89dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/edittxt1"
+        app:layout_constraintTop_toTopOf="@+id/edittxt1" />
+
+    <Button
+        android:id="@+id/button_convert"
+        android:layout_width="156dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="344dp"
+        android:text="CONVERT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appname3" />
+
+
+</android.support.constraint.ConstraintLayout>
